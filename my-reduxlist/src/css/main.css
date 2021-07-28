@@ -14,8 +14,8 @@ html {
 body {
   background: linear-gradient(
     190deg,
-    rgb(110, 96, 199) 0%,
-    rgb(78, 67, 124) 100%
+    rgb(144, 96, 199) 0%,
+    rgb(89, 67, 124) 100%
   );
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,7 +36,7 @@ body {
   margin-bottom: 2rem;
   color: #bfd3fa;
 
-  text-shadow: 0 0 5px #3729ce, 3px -1px 5px #341ec2;
+  text-shadow: 0 0 5px #7266f8, 3px -1px 5px #341ec2;
 }
 
 .addTodos {
@@ -58,7 +58,7 @@ body {
 }
 .todo-input:focus {
   outline: none;
-  border: 2px solid rgb(95, 83, 223);
+  border: 2px solid rgb(116, 83, 223);
 }
 
 .add-btn {
