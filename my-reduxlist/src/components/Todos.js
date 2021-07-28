@@ -25,20 +25,6 @@ const mapDispatchToProps = (dispatch) => {
 const Todos = (props) => {
   const [todo, setTodo] = useState("");
 
-  const inputRef = useRef(true);
-
-  const changeFocus = () => {
-    inputRef.current.disabled = false;
-    inputRef.current.focus();
-  };
-
-  const update = (id, value, e) => {
-    if (e.which === 13) {
-      props.updateTodo({ id, item: value });
-      inputRef.current.disabled = true;
-    }
-  };
-
   const handleChange = (e) => {
     setTodo(e.target.value);
   };
