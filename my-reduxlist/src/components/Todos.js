@@ -48,7 +48,7 @@ const Todos = (props) => {
         {props.todos.map((item) => {
           return (
             <li key={item.id}>
-              {item.item} <button>Delete</button>
+              {item.item} <button onClick={()=>props.removeTodo(item.id)}>Delete</button>{""}
             </li>
           );
         })}
