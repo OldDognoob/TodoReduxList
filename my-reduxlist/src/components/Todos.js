@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
 
-const Todos = () => {
+const Todos = (props) => {
   const [todo, setTodo] = useState("");
 
   const handleChange = (e) => {
     setTodo(e.target.value);
   };
-//console.log("todo text", todo);
+console.log("props from store", props);
 
   return (
     <div className="addTodos">
@@ -20,4 +21,4 @@ const Todos = () => {
   );
 };
 
-export default Todos;
+export default connect(null,null)(Todos);
