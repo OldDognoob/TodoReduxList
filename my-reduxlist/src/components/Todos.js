@@ -2,8 +2,11 @@ import React from 'react';
 
 const Todos = () => {
     return (
-        <div>
-            Todos
+        <div className="addTodos">
+        <input type="text" className="todo-input"/>
+        <button className="add-btn">
+            Add
+        </button>
         </div>
     )
 }
