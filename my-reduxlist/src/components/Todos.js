@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useState } from "react";
 
 const Todos = () => {
-    return (
-        <div className="addTodos">
-        <input type="text" className="todo-input"/>
-        <button className="add-btn">
-            Add
-        </button>
-        </div>
-    )
-}
+  const [todo, setTodo] = useState("");
+
+  const handleChange = (e) => {
+    setTodo(e.target.value);
+  };
+console.log("todo text", todo);
+
+  return (
+    <div className="addTodos">
+      <input
+        type="text"
+        onChange={(e) => handleChange(e)}
+        className="todo-input"
+      />
+      <button className="add-btn">Add</button>
+    </div>
+  );
+};
 
 export default Todos;
