@@ -6,7 +6,7 @@ const Todos = () => {
   const handleChange = (e) => {
     setTodo(e.target.value);
   };
-console.log("todo text", todo);
+//console.log("todo text", todo);
 
   return (
     <div className="addTodos">
