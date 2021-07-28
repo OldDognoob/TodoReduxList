@@ -1,5 +1,18 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
+import { addTodos } from "../redux/reducer";
+
+const mapStateToProps = (state) =>{
+    return{
+        todos:state,
+    };
+};
+
+const mapDispatchToProps = (dispatch)=>{
+    return{
+        addTodo:(obj)=>dispatch(addTodos(obj)),
+    };
+};
 
 const Todos = (props) => {
   const [todo, setTodo] = useState("");
@@ -21,4 +34,4 @@ console.log("props from store", props);
   );
 };
 
-export default connect(null,null)(Todos);
+export default connect(mapStateToProps,mapDispatchToProps)(Todos);
