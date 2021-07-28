@@ -50,14 +50,6 @@ const Todos = (props) => {
         Add
       </button>
       <br />
-
-      <ul>
-        {props.todos.map((item) => {
-          return (
-            
-          );
-        })}
-      </ul>
     </div>
   );
 };
